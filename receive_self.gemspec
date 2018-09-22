@@ -12,7 +12,7 @@ Gem::Specification.new do |spec|
   spec.summary       = %q{This offer easy way inherited method return subclass instance.}
   spec.description   = %q{Sometimes inherited method return superclass instance and we fill irritating.
                           So I provide the perfect solution.}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/mmmmmavo/receive_self"
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
