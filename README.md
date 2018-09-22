@@ -42,9 +42,7 @@ l = m.concat__rself n
 concat return Array instance.But concat__rself return MyArray instance.
 
 ```
-m = MyArray.new
-n = MyArray.new
-l = m.concat__rself n
+l.class #=> MyArray
 ```
 
 ## Development
