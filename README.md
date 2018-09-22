@@ -2,7 +2,6 @@
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/receive_self`. To experiment with that code, run `bin/console` for an interactive prompt.
 
-TODO: Delete this and the text above, and describe your gem
 
 ## Installation
 
@@ -22,7 +21,31 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+#### Describe `receive_self` in subclass definition.
+
+```
+class MyArray < Array
+  receive_self
+end
+```
+
+#### And you can use `__rself` suffix method.
+
+```
+m = MyArray.new
+n = MyArray.new
+l = m.concat__rself n
+```
+
+#### This suffixed method return subclass instance.
+
+concat return Array instance.But concat__rself return MyArray instance.
+
+```
+m = MyArray.new
+n = MyArray.new
+l = m.concat__rself n
+```
 
 ## Development
 
