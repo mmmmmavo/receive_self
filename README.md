@@ -33,16 +33,21 @@ end
 
 ```
 m = MyArray.new
-n = MyArray.new
-l = m.concat__rself n
+
+m.uniq
+
+m.uniq__rself
+
 ```
 
 #### This suffixed method return subclass instance.
 
-concat return Array instance.But concat__rself return MyArray instance.
+`uniq` return Array instance.But `uniq__rself` return MyArray instance.
 
 ```
-l.class #=> MyArray
+puts m.uniq.class #Array
+puts m.uniq__rself.class #MyArray
+
 ```
 
 ## Development
